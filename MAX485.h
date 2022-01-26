@@ -10,7 +10,7 @@ class MAX485
             HardwareSerial& hwSerial,
             uint8_t         transmissionEnablePin,
             uint32_t        baudrate,
-            uint16_t        config,
+            SerialConfig    config,
             uint16_t        predelay,
             uint16_t        postdelay
         );
@@ -35,8 +35,8 @@ class MAX485
         const uint16_t predelay;
         const uint16_t postdelay;
 
-        const uint32_t serialBaudrate;
-        const uint16_t serialConfig;
+        const uint32_t     serialBaudrate;
+        const SerialConfig serialConfig;
 
         bool     transmissionActive = false;
 

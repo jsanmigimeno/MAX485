@@ -5,7 +5,7 @@ MAX485::MAX485(
 	HardwareSerial& hwSerial,
 	uint8_t         transmissionEnablePin,
 	uint32_t        baudrate  = 9600,
-	uint16_t        config    = SERIAL_8N1,
+	SerialConfig    config    = SERIAL_8N1,
 	uint16_t        predelay  = 50,
 	uint16_t        postdelay = 50
 ) :
