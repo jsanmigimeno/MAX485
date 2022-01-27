@@ -3,6 +3,10 @@
 
 #include <Arduino.h>
 
+#ifdef __AVR__
+    typedef uint8_t SerialConfig;
+#endif
+
 class MAX485
 {
     public:
